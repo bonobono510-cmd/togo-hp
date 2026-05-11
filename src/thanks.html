@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>送信完了 | 合同会社TOGO</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#1a2744">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Noto+Sans+JP:wght@300;400;500;600&family=Noto+Serif+JP:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:'Noto Sans JP','Yu Gothic',sans-serif;
+  background:linear-gradient(160deg,#0f1a2e 0%,#1a2744 40%,#2b4c7e 100%);
+  min-height:100vh;display:flex;align-items:center;justify-content:center;
+  color:#fff;padding:24px;
+}
+.card{
+  max-width:560px;width:100%;text-align:center;
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(184,150,90,.25);
+  border-radius:3px;padding:clamp(40px,6vw,64px) clamp(24px,5vw,48px);
+  position:relative;overflow:hidden;
+}
+.card::before{
+  content:"";position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,transparent,#b8965a,transparent);
+}
+.label{
+  font-family:'Cormorant Garamond',serif;font-size:13px;letter-spacing:5px;
+  color:#d4b07a;text-transform:uppercase;margin-bottom:20px;
+}
+.divider{width:40px;height:2px;background:#b8965a;margin:0 auto 28px}
+h1{
+  font-family:'Noto Serif JP',serif;font-size:clamp(22px,4vw,30px);
+  font-weight:600;color:#fff;margin-bottom:24px;line-height:1.6;
+}
+p{
+  font-size:14px;color:rgba(255,255,255,.7);line-height:2;margin-bottom:16px;
+}
+.btn{
+  display:inline-block;margin-top:24px;padding:14px 40px;
+  border:1px solid #b8965a;color:#d4b07a;text-decoration:none;
+  font-size:13px;letter-spacing:2px;transition:all .3s;background:transparent;
+}
+.btn:hover{background:#b8965a;color:#fff}
+</style>
+</head>
+<body>
+<main class="card">
+  <p class="label">Thank You</p>
+  <div class="divider"></div>
+  <h1>お問い合わせを受け付けました</h1>
+  <p>このたびはお問い合わせいただき、誠にありがとうございます。<br>内容を確認のうえ、担当者より折り返しご連絡いたします。</p>
+  <p>恐れ入りますが、しばらくお待ちくださいますようお願いいたします。</p>
+  <a href="/" class="btn">トップページへ戻る</a>
+</main>
+</body>
+</html>

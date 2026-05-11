@@ -1,0 +1,16 @@
+{
+  "name": "合同会社TOGO",
+  "short_name": "TOGO",
+  "description": "合同会社TOGO（千葉県松戸市）公式サイト。不動産賃貸事業・ITコンサルティング事業。",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#1a2744",
+  "theme_color": "#1a2744",
+  "lang": "ja",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

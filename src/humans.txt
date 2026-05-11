@@ -1,0 +1,13 @@
+/* TEAM */
+
+代表社員: 後藤 達彦
+所在地: 千葉県松戸市新松戸六丁目70番地
+法人番号: 8040003014985
+Site: https://togo-jp.biz/
+
+/* SITE */
+
+Last update: 2026/05/12
+Standards: HTML5, CSS3, Schema.org
+Language: 日本語
+Hosting: Netlify

@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+Disallow: /thanks.html
+Disallow: /404.html
+
+# AI クローラーは index 自体は許可（指名検索/AI検索ヒットを取りに行くため）
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+Sitemap: https://togo-jp.biz/sitemap.xml
