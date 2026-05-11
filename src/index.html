@@ -425,6 +425,21 @@ input[name="_gotcha"]{display:none}
   .info-value{padding:10px 16px}
   .footer-nav{flex-direction:column;gap:12px}
 }
+
+/* ── Print (会社案内 PDF 用 A4 最適化) ── */
+@media print {
+  @page{size:A4;margin:14mm 12mm}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact;color-adjust:exact}
+  .skip-link,.header,.hero-cta,.scroll-indicator,.contact,.faq,.hamburger,.mobile-menu,.footer-nav,.form-card{display:none!important}
+  .hero{min-height:auto;padding:60px 0;page-break-after:always}
+  .hero-content{padding:40px 24px}
+  body{font-size:11pt;color:#1a2744}
+  section{page-break-inside:avoid;padding:40px 24px!important}
+  .greeting-card,.profile-card,.info-table,.philosophy-card,.timeline-item,.service-card,.clients-box{page-break-inside:avoid}
+  .footer{padding:24px;page-break-inside:avoid}
+  .footer-policies{display:none!important}
+  a{color:inherit;text-decoration:none}
+}
 </style>
 </head>
 <body>
@@ -875,6 +890,8 @@ input[name="_gotcha"]{display:none}
       <a href="/privacy.html">個人情報保護方針</a>
       <span class="footer-sep">|</span>
       <a href="/compliance.html">反社会的勢力排除に関する基本方針</a>
+      <span class="footer-sep">|</span>
+      <a href="/togo-company-profile.pdf" target="_blank" rel="noopener">会社案内（PDF）</a>
     </div>
     <div class="footer-bottom">
       <p class="footer-copy">&copy; 2020-<span id="copyright-year">2026</span> 合同会社TOGO All Rights Reserved.</p>
