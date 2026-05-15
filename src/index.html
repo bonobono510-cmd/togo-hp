@@ -390,12 +390,6 @@ textarea.form-input{min-height:140px;resize:vertical}
 .form-submit:hover{background:var(--navy-light)}
 .form-submit:disabled{opacity:.5;cursor:not-allowed}
 
-/* Success page styles (for _next redirect) */
-.success-card{text-align:center;padding:60px;background:#fff;border-radius:2px;box-shadow:0 1px 3px rgba(26,39,68,.06)}
-.success-card .check{font-size:48px;margin-bottom:20px;color:var(--gold)}
-
-/* Hidden fields for FormSubmit */
-input[name="_gotcha"]{display:none}
 
 /* ── Footer ── */
 .footer{background:var(--navy-dark);padding:48px 24px 32px;border-top:1px solid rgba(184,150,90,.15)}
@@ -816,16 +810,9 @@ input[name="_gotcha"]{display:none}
 
     <div class="fade-in delay-2">
       <div class="form-card">
-        <!--
-          ▼▼▼ 重要：下の contact@togo-jp.biz を自分のメールアドレスに変更してください ▼▼▼
-        -->
-        <form action="https://formsubmit.co/contact@togo-jp.biz" method="POST" class="form-grid">
-          <!-- FormSubmit設定 -->
-          <input type="hidden" name="_subject" value="【合同会社TOGO HP】お問い合わせ">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_template" value="table">
-          <input type="text" name="_honey" style="display:none">
-          <input type="hidden" name="_next" value="https://togo-jp.biz/thanks.html">
+        <form name="contact" method="POST" action="/thanks.html" data-netlify="true" data-netlify-honeypot="bot-field" class="form-grid">
+          <input type="hidden" name="form-name" value="contact">
+          <p hidden aria-hidden="true"><label>この項目は入力しないでください <input name="bot-field"></label></p>
 
           <div class="form-row">
             <div class="form-group">
